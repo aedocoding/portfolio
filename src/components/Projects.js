@@ -20,6 +20,7 @@ const main = {
     "https://media-exp1.licdn.com/dms/image/C4D1BAQEQ6dphI3LUUQ/company-background_10000/0?e=2159024400&v=beta&t=2H2DVbdNlJWExnbk-IsJ0Jm8Gt5hTaxN7jiU0SPM648",
   imgText: "main image description",
   linkText: "Continue reading…",
+  url: '/connectourkids'
 };
 
 const featured = [
@@ -29,6 +30,7 @@ const featured = [
       "The front-end I helped build to represent a data science model that analyzes language for toxicity. The model itself was never implemented but the front-end is functioning.",
     image: "https://www.bigarmor.com/wp-content/uploads/Big-Armor-Logo.png",
     imageText: "Image Text",
+    url: '/bigarmor'
   },
   {
     title: "React Coding Tutorials",
@@ -37,6 +39,7 @@ const featured = [
     image:
       "https://yt3.ggpht.com/a/AATXAJxHHP_h8bUovc1qC4c07sVXxVbp3gwDEg-iq8gbFQ=s900-c-k-c0xffffffff-no-rj-mo",
     imageText: "Image Text",
+    url: '/tutorials'
   },
 ];
 

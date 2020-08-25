@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Projects from "./components/Projects";
 import Blog from "./components/Blog";
 import About from "./components/About"
+import COK from "./components/projects/COK.js"
 import "./App.css";
 
 
@@ -26,6 +27,9 @@ function App() {
             <Route exact path="/" component={Projects} />
             <Route path="/blog" component={Blog} />
             <Route path="/about" component={About} />
+            <Route path='/connectourkids' component={COK}/>
+            <Route path='/bigarmor' component={COK}/>
+            <Route path='/tutorials' component={COK}/>
           </Switch>
         </Router>
       </Container>

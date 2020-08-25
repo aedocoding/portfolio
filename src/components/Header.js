@@ -35,7 +35,6 @@ export default function Header(props) {
     <React.Fragment>
       <Toolbar className={classes.toolbar}>
         <Typography
-          component="h2"
           variant="h5"
           color="inherit"
           align="center"
