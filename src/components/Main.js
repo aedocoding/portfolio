@@ -66,7 +66,7 @@ export default function Main(props) {
             <Typography variant="h5" color="inherit" paragraph>
               {post.description}
             </Typography>
-            <Link to={post.url}>
+            <Link to={post.url} style={{ textDecoration: 'none' }}>
               <Typography color='primary' variant='subtitle1'>
               {post.linkText}
               </Typography>    

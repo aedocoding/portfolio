@@ -38,7 +38,7 @@ export default function Featured(props) {
               <Typography variant="subtitle1" paragraph>
                 {post.description}
               </Typography>
-              <Link to={post.url}>
+              <Link to={post.url} style={{ textDecoration: 'none' }}>
                 <Typography variant="subtitle1" color="primary">
                   Continue reading...
                 </Typography>

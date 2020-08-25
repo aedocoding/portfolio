@@ -74,9 +74,12 @@ export default function Header(props) {
             // variant="body2"
             // href={section.url}
             // className={classes.toolbarLink}
+            style={{ textDecoration: 'none' }}
             to={section.url}
           >
+            <Typography  key={section.title}>
             {section.title}
+            </Typography> 
           </Link>
         ))}
       </Toolbar>
