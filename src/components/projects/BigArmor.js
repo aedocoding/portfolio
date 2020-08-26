@@ -30,19 +30,19 @@ export default function BigArmor() {
       <Card className={classes.card}>
         <div className={classes.cardDetails}>
           <CardContent>
-            <Typography variant="h4">Tech Stack</Typography>
+            <Typography color='secondary'>TECH STACK</Typography>
             <Typography>
-              <ul>
                 <li>React</li>
                 <li>React Router</li>
                 <li>TypeScript</li>
                 <li>SASS</li>
                 <li>amCharts</li>
-              </ul>
             </Typography>
-            <Typography variant="h5">Project Dates: May 2020</Typography>
             <Typography>
-              <Link href="https://master.d1lbzqg7vuxz8b.amplifyapp.com/">
+              <Link
+                color="secondary"
+                href="https://master.d1lbzqg7vuxz8b.amplifyapp.com/"
+              >
                 Link to deployed website
               </Link>
             </Typography>
@@ -51,7 +51,7 @@ export default function BigArmor() {
         <CardMedia className={classes.cardMedia} image={big2} />
       </Card>
       <div>
-        <Typography variant="h5">Description</Typography>
+        <Typography color="secondary">DESCRIPTION</Typography>
         <Typography>
           <li>
             This project was assigned to our team in parallel with the other
@@ -73,9 +73,9 @@ export default function BigArmor() {
             for this project was around a week.
           </li>
         </Typography>
-        <Typography variant="h5">Features I Built</Typography>
+        <Typography color="secondary">FEATURES BUILT </Typography>
         <Typography>
-          <ul>
+
             <li>
               Led the team on overall design and color scheme for the website.
             </li>
@@ -92,7 +92,6 @@ export default function BigArmor() {
               Added several CSS animations (like the fade-in) throughout the
               wensite.
             </li>
-          </ul>
         </Typography>
       </div>
     </div>

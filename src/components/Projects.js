@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const main = {
-  title: "Connect Our Kids",
+  title: "CONNECT OUR KIDS",
   description:
     "A mobile app made in React Native that was made to help Social Service workers in finding forever homes for foster children. I helped develop features on it as an intern for 2 months.",
   image:
@@ -25,7 +25,7 @@ const main = {
 
 const featured = [
   {
-    title: "Big Armor",
+    title: "BIG ARMOR",
     description:
       "The front-end I helped build to represent a data science model that analyzes language for toxicity. The model itself was never implemented but the front-end is functioning.",
     image: "https://www.bigarmor.com/wp-content/uploads/Big-Armor-Logo.png",
@@ -33,7 +33,7 @@ const featured = [
     url: "/bigarmor",
   },
   {
-    title: "React Coding Tutorials",
+    title: "REACT CODING TUTORIALS",
     description:
       "A collection of recordings I've made for students that covers important web-development concepts - with a focus on fullstack, React, and related frameworks or libraries.",
     image:

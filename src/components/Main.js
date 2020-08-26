@@ -57,14 +57,13 @@ export default function Main(props) {
         <Grid item md={6}>
           <div className={classes.mainFeaturedPostContent}>
             <Typography
-              component="h1"
-              variant="h3"
+              variant='h5'
               color="inherit"
               gutterBottom
             >
               {post.title}
             </Typography>
-            <Typography variant="h5" color="inherit" paragraph>
+            <Typography color="inherit" paragraph>
               {post.description}
             </Typography>
             <Button
