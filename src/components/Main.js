@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
@@ -66,11 +67,17 @@ export default function Main(props) {
             <Typography variant="h5" color="inherit" paragraph>
               {post.description}
             </Typography>
-            <Link to={post.url} style={{ textDecoration: 'none' }}>
-              <Typography color='primary' variant='subtitle1'>
-              {post.linkText}
-              </Typography>    
-            </Link>
+            <Button
+              variant="outlined"
+              color="primary"
+              style={{ backgroundColor: "#5F96E7" }}
+            >
+              <Link to={post.url} style={{ textDecoration: "none" }}>
+                <Typography style={{ color: "white" }} variant="subtitle1">
+                  {post.linkText}
+                </Typography>
+              </Link>
+            </Button>
           </div>
         </Grid>
       </Grid>

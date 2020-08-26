@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
+import Button from "@material-ui/core/Button";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -38,11 +39,13 @@ export default function Featured(props) {
               <Typography variant="subtitle1" paragraph>
                 {post.description}
               </Typography>
-              <Link to={post.url} style={{ textDecoration: 'none' }}>
-                <Typography variant="subtitle1" color="primary">
-                  Continue reading...
-                </Typography>
-              </Link>
+              <Button color="secondary">
+                <Link to={post.url} style={{ textDecoration: "none" }}>
+                  <Typography variant="subtitle1" color="secondary">
+                    Continue reading...
+                  </Typography>
+                </Link>
+              </Button>
             </CardContent>
           </div>
           <Hidden xsDown>

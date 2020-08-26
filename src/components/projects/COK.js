@@ -75,9 +75,9 @@ export default function COK() {
             development curriculum - it was a 2 month long group project in
             which our team had a chance to put our training to use in a
             real-world setting. The app was pretty far in development at this
-            point but had not been deployed to the App Store or Google Play. Our
+            point but had not yet been deployed to the App Store or Google Play. Our
             job was to make the mobile app achieve feature parity with the
-            fully-featured and deployed web app on the company's website.
+            completed web app on the company's website.
           </li>
           <li>
             Part of what made this project such a great challenge for us was
