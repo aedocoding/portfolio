@@ -5,10 +5,9 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Link from "@material-ui/core/Link";
-import connect1 from "../../assets/connect-1.png";
-import connect2 from "../../assets/connect-2.png";
-import connect3 from "../../assets/connect-3.png";
-import connect4 from "../../assets/connect-4.png";
+import yt1 from "../../assets/yt-1.png";
+import yt2 from "../../assets/yt-2.png";
+import yt3 from "../../assets/yt-3.png";
 
 const useStyles = makeStyles({
   card: {
@@ -18,7 +17,7 @@ const useStyles = makeStyles({
     flex: 1,
   },
   cardMedia: {
-    width: 175,
+    width: 550,
     height: 350,
   },
 });
@@ -52,50 +51,36 @@ export default function BigArmor() {
             </Typography>
           </CardContent>
         </div>
-        <CardMedia className={classes.cardMedia} image={connect1} />
-        <CardMedia className={classes.cardMedia} image={connect2} />
-        <CardMedia className={classes.cardMedia} image={connect3} />
-        <CardMedia className={classes.cardMedia} image={connect4} />
+        <CardMedia className={classes.cardMedia} image={yt1} />
+        {/* <CardMedia className={classes.cardMedia} image={yt2} />
+        <CardMedia className={classes.cardMedia} image={yt3} /> */}
       </Card>
       <div>
         <Typography variant="h5">Description</Typography>
         <Typography>
           <li>
-            I was assigned to this project during my time in Lambda School's web
-            development curriculum - it was a 2 month long group project in
-            which our team had a chance to put our training to use in a
-            real-world setting. The app was pretty far in development at this
-            point but had not been deployed to the App Store or Google Play. Our
-            job was to make the mobile app achieve feature parity with the
-            fully-featured and deployed web app on the company's website.
+            This playlist of web development tutorials began as a teaching tool
+            during my part time job working as a Team Lead for Lambda School. A
+            Team Lead is essentially a coding tutor who checks in daily with
+            around 10 students, answering their questions and ensuring they're
+            completing projects and tests. To help better prepare them for their
+            bi-weekly tests known as sprints, I would do live coding sessions in
+            which I covered the concepts they had learned in the past 2 weeks. A
+            student had requested that the session be recorded, thus birthing
+            the playlist.
           </li>
           <li>
-            Part of what made this project such a great challenge for us was
-            being exposed to a completely new tech stack. No one on our team had
-            any experience whatsoever in any of the frameworks being used aside
-            from Jest, so we had to spend about a week familiarizing ourselves
-            with them through online tutorials and the documentation. It
-            certainly helped that a lot our training in React made React Native
-            feel like an additional layer rather than something completely new -
-            but working in the mobile sphere certainly presented it's own unique
-            obstacles. While I'm glad for having some time to prepare for the
-            project, most of the learning came on the fly during the project
-            itself.
+            Eventually I was promoted from Team Lead to Section Lead, thus
+            removing me from the daily duty of working with the same group of
+            students on coding assignments. I was now managing the Team Leads
+            who checked in daily with students and guided them. My previous
+            students had asked that I continue the tutorials even though I was
+            no longer supervising their progress, which led to my tutorials no
+            longer having a live audience as they did in the beginning. I am
+            grateful to have had the chance to make these videos, as it let me
+            brush up on key web development concepts while also giving me a
+            chance to teach others!
           </li>
-        </Typography>
-        <Typography variant="h5">Features I Built</Typography>
-        <Typography>
-            <ul>
-                <li>Created modal for logging calls in the app</li>
-                <li>Created error message to accompany the modal if it isn't logged in the app</li>
-                <li>Created form for adding new foster child case and hooked it up to backend</li>
-                <li>Created form for adding new connection/relative of foster child and hooked it up to backend</li>
-                <li>Created dynamic filters for cases and connections relatives based on criteria like gender and case status.</li>
-                <li>Fixed bug in which using sorting option for cases or connections resulted in nothing happening.</li>
-                <li>Fixed bug in which list of cases wasn't properly sorted after submitting a new case</li>
-                <li>Wrote unit tests for adding a new foster child case</li>
-                <li>Made styling/formatting changes throughout the app as requested by stakeholder or users</li>
-            </ul>
         </Typography>
       </div>
     </div>

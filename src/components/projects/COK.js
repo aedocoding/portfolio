@@ -43,7 +43,7 @@ export default function COK() {
               </ul>
             </Typography>
             <Typography variant="h5">
-              Project Dates: May 2020 - July 2020
+              Project Dates: April 2020 - June 2020
             </Typography>
             <Typography>
               <Link href="https://apps.apple.com/us/app/connect-our-kids/id1471038972?mt=8">

@@ -8,7 +8,7 @@ import Blog from "./components/Blog";
 import About from "./components/About";
 import COK from "./components/projects/COK.js";
 import BigArmor from "./components/projects/BigArmor";
-import YT from './components/projects/YT'
+import YT from "./components/projects/YT";
 import "./App.css";
 
 const sections = [
