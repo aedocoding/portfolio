@@ -6,8 +6,6 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Link from "@material-ui/core/Link";
 import yt1 from "../../assets/yt-1.png";
-import yt2 from "../../assets/yt-2.png";
-import yt3 from "../../assets/yt-3.png";
 
 const useStyles = makeStyles({
   card: {
@@ -19,6 +17,8 @@ const useStyles = makeStyles({
   cardMedia: {
     width: 550,
     height: 350,
+    borderRadius: 5,
+    margin: 20
   },
 });
 
@@ -26,26 +26,24 @@ export default function BigArmor() {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className='fade'>
       <Card className={classes.card}>
         <div className={classes.cardDetails}>
           <CardContent>
-            <Typography variant="h4">Tech Stack</Typography>
+            <Typography color="secondary">TECH STACK</Typography>
             <Typography>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Redux</li>
-                <li>Jest</li>
-              </ul>
-            </Typography>
-            <Typography variant="h5">
-              Project Dates: March 2020 - October 2020
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Redux</li>
+              <li>Jest</li>
             </Typography>
             <Typography>
-              <Link href="https://www.youtube.com/playlist?list=PLwgPVaBXw16MF5xzwKNNwgPYqdhsaqvmP">
+              <Link
+                color="secondary"
+                href="https://www.youtube.com/playlist?list=PLwgPVaBXw16MF5xzwKNNwgPYqdhsaqvmP"
+              >
                 Tutorial Playlist
               </Link>
             </Typography>
@@ -56,7 +54,7 @@ export default function BigArmor() {
         <CardMedia className={classes.cardMedia} image={yt3} /> */}
       </Card>
       <div>
-        <Typography variant="h5">Description</Typography>
+        <Typography color='secondary'>DESCRIPTION</Typography>
         <Typography>
           <li>
             This playlist of web development tutorials began as a teaching tool

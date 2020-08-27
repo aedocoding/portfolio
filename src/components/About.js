@@ -1,8 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import About1 from "../assets/about.jpg";
 import About2 from "../assets/about2.jpg";
 import About3 from "../assets/about3.JPG";
 import About4 from "../assets/about4.JPG";
+import About5 from "../assets/about5.jpg";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
@@ -32,12 +34,14 @@ const useStyles = makeStyles({
   cardMedia: {
     width: 200,
     height: 250,
-    margin: 20
+    margin: 20,
+    borderRadius: 5
   },
   cardMedia2: {
     width: 250,
     height: 250,
-    margin: 20
+    margin: 20,
+    borderRadius: 5
   },
   skillCard: {
     width: 150,
@@ -53,12 +57,12 @@ export default function About() {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className='fade'>
       <Card className={classes.card}>
       <CardMedia
           className={classes.cardMedia}
           image={
-            "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/74409575_2696351543760137_1881339947894439936_n.jpg?_nc_cat=109&_nc_sid=09cbfe&_nc_ohc=JgjJGxjVWO0AX-c9UXk&_nc_ht=scontent-lax3-1.xx&oh=8c926ee36a5ff3ab04ce688d5cc9f1e3&oe=5F6BD437"
+            About1
           }
         />
 
@@ -74,12 +78,20 @@ export default function About() {
             About4
           }
         />
+                  <CardMedia
+          className={classes.cardMedia}
+          image={
+            About5
+          }
+        />
                 <CardMedia
           className={classes.cardMedia2}
           image={
             About2
           }
         />
+
+        
       </Card>
 
       <Typography variant="h5" align="center">

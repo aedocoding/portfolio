@@ -30,7 +30,7 @@ export default function Blog() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="lg">
+      <Container className= 'fade' maxWidth="lg">
         <Grid container spacing={5} className={classes.mainGrid}>
         <BlogMain title="Reflections from a developer in training" posts={posts} />
           <Sidebar

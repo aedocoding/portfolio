@@ -27,7 +27,7 @@ export default function COK() {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className='fade'>
       <Card className={classes.card}>
         <div className={classes.cardDetails}>
           <CardContent>

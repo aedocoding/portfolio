@@ -19,6 +19,8 @@ const useStyles = makeStyles({
   cardMedia: {
     width: 550,
     height: 350,
+    borderRadius: 5,
+    margin: 20
   },
 });
 
@@ -26,7 +28,7 @@ export default function BigArmor() {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className='fade'>
       <Card className={classes.card}>
         <div className={classes.cardDetails}>
           <CardContent>

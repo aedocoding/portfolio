@@ -48,7 +48,7 @@ function App() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="lg">
+      <Container className='fade' maxWidth="lg">
         <Main post={main} />
         <Grid container spacing={4}>
           {featured.map((post) => (

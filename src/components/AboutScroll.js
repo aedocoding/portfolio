@@ -90,11 +90,11 @@ export default class AboutScroll extends Component {
                     : "classificationText"
                 }
               >
-                My own personal coding journey began in 2019 when I was 1 year
+                My own personal coding journey began in 2019 when I was a year
                 into pharmacy school. Deciding that the world of pharmaceutics
-                and science wasn't for me, I pivoted and haven't looked back
+                and healthcare wasn't for me, I pivoted and haven't looked back
                 since. My first few months of coding were all self taught along
-                with the use of classes from Udemy.
+                with the use of classes from Udemy, focusing on Python.
               </p>
             </div>
             <div className="classificationTitleContainer">
