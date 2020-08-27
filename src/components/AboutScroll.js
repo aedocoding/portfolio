@@ -1,61 +1,59 @@
 import React, { Component } from "react";
 
-export default class RadarGraph extends Component {
-  state = {
-
-  }
+export default class AboutScroll extends Component {
+  state = {};
   isBottom(element) {
     return element.getBoundingClientRect().bottom <= window.innerHeight;
   }
 
   componentDidMount() {
-    document.addEventListener('scroll', this.trackScrolling);
+    document.addEventListener("scroll", this.trackScrolling);
   }
 
   componentWillUnmount() {
-    document.removeEventListener('scroll', this.trackScrolling);
+    document.removeEventListener("scroll", this.trackScrolling);
   }
   trackScrolling = () => {
-    const toxicElement = document.getElementById('toxic');
-    const severeToxicElement = document.getElementById('severeToxic');
-    const obsceneElement = document.getElementById('obscene');
-    const threatElement = document.getElementById('threat');
-    const insultElement = document.getElementById('insult');
-    const identityElement = document.getElementById('identityHate');
+    const toxicElement = document.getElementById("toxic");
+    const severeToxicElement = document.getElementById("severeToxic");
+    const obsceneElement = document.getElementById("obscene");
+    const threatElement = document.getElementById("threat");
+    const insultElement = document.getElementById("insult");
+    const identityElement = document.getElementById("identityHate");
     if (this.isBottom(toxicElement)) {
-      this.setState({ whichVisible: 'toxic' });
+      this.setState({ whichVisible: "toxic" });
     }
     if (this.isBottom(severeToxicElement)) {
-      this.setState({ whichVisible: 'severeToxic' });
+      this.setState({ whichVisible: "severeToxic" });
     }
     if (this.isBottom(obsceneElement)) {
-      this.setState({ whichVisible: 'obscene' });
+      this.setState({ whichVisible: "obscene" });
     }
     if (this.isBottom(threatElement)) {
-      this.setState({ whichVisible: 'threat' });
+      this.setState({ whichVisible: "threat" });
     }
-    if (this.isBottom(insultElement)) {
-      this.setState({ whichVisible: 'insult' });
-    }
-    if (this.isBottom(identityElement)) {
-      this.setState({ whichVisible: 'identityHate' });
-    }
-  }
+    // if (this.isBottom(insultElement)) {
+    //   this.setState({ whichVisible: "insult" });
+    // }
+    // if (this.isBottom(identityElement)) {
+    //   this.setState({ whichVisible: "identityHate" });
+    // }
+  };
 
   handleChange = (event) => {
-    this.setState({ [event.target.name]: event.target.value })
-  }
+    this.setState({ [event.target.name]: event.target.value });
+  };
 
   handleSubmit = (event) => {
-    this.setState({ [event.target.name]: event.target.value })
-    console.log("the string send to backend", this.state.input)
-    event.preventDefault();}
-
+    this.setState({ [event.target.name]: event.target.value });
+    console.log("the string send to backend", this.state.input);
+    event.preventDefault();
+  };
 
   render() {
     const { whichVisible } = this.state;
     return (
-        <div className='tryItPage'>
+      <div className="tryItPage">
         <div className="classificationSection">
           <div className="classificationFlexContainer" id="toxic">
             <div className="classificationTitleContainer">
@@ -66,7 +64,7 @@ export default class RadarGraph extends Component {
                     : "classificationTitle"
                 }
               >
-                Toxic
+                Welcome
               </h1>
             </div>
             <div className="classificationTextContainer">
@@ -77,8 +75,9 @@ export default class RadarGraph extends Component {
                     : "classificationText"
                 }
               >
-                Toxic is a measure of text being emotionally abusive and
-                psychologically harmful towards others.
+                This website was made so I could learn how to use Material-UI,
+                start a personal developer's blog, and showcase some of the work
+                I've done.
               </p>
             </div>
           </div>
@@ -91,8 +90,11 @@ export default class RadarGraph extends Component {
                     : "classificationText"
                 }
               >
-                Severe Toxic rates text for the same metrics as Toxic, but on an
-                extreme scale.
+                My own personal coding journey began in 2019 when I was 1 year
+                into pharmacy school. Deciding that the world of pharmaceutics
+                and science wasn't for me, I pivoted and haven't looked back
+                since. My first few months of coding were all self taught along
+                with the use of classes from Udemy.
               </p>
             </div>
             <div className="classificationTitleContainer">
@@ -103,7 +105,7 @@ export default class RadarGraph extends Component {
                     : "classificationTitle"
                 }
               >
-                Severe Toxic
+                My Start
               </h1>
             </div>
           </div>
@@ -116,7 +118,7 @@ export default class RadarGraph extends Component {
                     : "classificationTitle"
                 }
               >
-                Obscene
+                Lambda
               </h1>
             </div>
             <div className="classificationTextContainer">
@@ -127,8 +129,12 @@ export default class RadarGraph extends Component {
                     : "classificationText"
                 }
               >
-                Obscenity measures the offensive nature of text, with weight
-                towards cursing and foul language.
+                In late 2019, I began to shop around boot camps to further my
+                journey into programming and to receive a more structured
+                approach to learning web development. At the suggestion of a
+                friend, I applied to Lambda School due to their curriculum being
+                one of the few that included both Fullstack and Computer
+                Science.
               </p>
             </div>
           </div>
@@ -141,8 +147,11 @@ export default class RadarGraph extends Component {
                     : "classificationText"
                 }
               >
-                Threat is a measure of the hostility of text and intent to
-                inflict physical harm on others.
+                I've completed Lambda's Web Development bootcamp and I'm on the
+                hunt for a job! I love to work with both the Frontend and
+                Backend and I'm always excited to dive into new frameworks and
+                libraries in my work. Contact me if you know of any
+                opportunities!
               </p>
             </div>
             <div className="classificationTitleContainer">
@@ -153,11 +162,11 @@ export default class RadarGraph extends Component {
                     : "classificationTitle"
                 }
               >
-                Threat
+                Today
               </h1>
             </div>
           </div>
-          <div className="classificationFlexContainer" id="insult">
+          {/* <div className="classificationFlexContainer" id="insult">
             <div className="classificationTitleContainer">
               <h1
                 className={
@@ -206,9 +215,9 @@ export default class RadarGraph extends Component {
                 Identity Hate
               </h1>
             </div>
-          </div>
+          </div> here */}
         </div>
       </div>
-        )
+    );
   }
 }

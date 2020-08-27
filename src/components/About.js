@@ -1,5 +1,8 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import About2 from "../assets/about2.jpg";
+import About3 from "../assets/about3.JPG";
+import About4 from "../assets/about4.JPG";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
@@ -18,6 +21,7 @@ import react from "../assets/icon-react.png";
 import reactNative from "../assets/icon-react-native.png";
 import redux from "../assets/icon-redux.png";
 import ts from "../assets/icon-ts.png";
+import AboutScroll from "./AboutScroll"
 const useStyles = makeStyles({
   card: {
     display: "flex",
@@ -26,8 +30,14 @@ const useStyles = makeStyles({
     flex: 1,
   },
   cardMedia: {
-    width: 320,
-    height: 400,
+    width: 200,
+    height: 250,
+    margin: 20
+  },
+  cardMedia2: {
+    width: 250,
+    height: 250,
+    margin: 20
   },
   skillCard: {
     width: 150,
@@ -45,34 +55,29 @@ export default function About() {
   return (
     <div>
       <Card className={classes.card}>
-        <div className={classes.cardDetails}>
-          <CardContent>
-            <Typography  align='center' color="secondary">WELCOME</Typography>
-            <Typography>
-              This website was made so I could learn how to use Material-UI,
-              start a personal developer's blog, and showcase some of the work
-              I've done.
-            </Typography>
-            <Typography>
-              My own personal coding journey began in 2019 when I was 1 year
-              into pharmacy school. Deciding that the world of pharmaceutics and
-              science wasn't for me, I pivoted and haven't looked back since.
-              Although my time in pharmacy was short, I was fortunate to have
-              met my girlfriend and partner, Shana, because of it - as her
-              cousin was my classmate. We like to joke that although you can't
-              put a price on love, she cost me $65,000 (the cost of my loans for
-              a year of pharmacy school).
-            </Typography>
-            <Typography>
-              I currently reside in sunny Southern California, so feel free to
-              connect with me on any sites linked here.
-            </Typography>
-          </CardContent>
-        </div>
-        <CardMedia
+      <CardMedia
           className={classes.cardMedia}
           image={
             "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/74409575_2696351543760137_1881339947894439936_n.jpg?_nc_cat=109&_nc_sid=09cbfe&_nc_ohc=JgjJGxjVWO0AX-c9UXk&_nc_ht=scontent-lax3-1.xx&oh=8c926ee36a5ff3ab04ce688d5cc9f1e3&oe=5F6BD437"
+          }
+        />
+
+          <CardMedia
+          className={classes.cardMedia}
+          image={
+            About3
+          }
+        />
+          <CardMedia
+          className={classes.cardMedia}
+          image={
+            About4
+          }
+        />
+                <CardMedia
+          className={classes.cardMedia2}
+          image={
+            About2
           }
         />
       </Card>
@@ -163,20 +168,8 @@ export default function About() {
             </Link>
           </CardActionArea>
         </Card>
-        {/* <Typography>
-          <ul>
-
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>React Native</li>
-            <li>Redux</li>
-            <li>Knex.js</li>
-            <li>Node.js</li>
-            <li>Python</li>
-          </ul>
-        </Typography> */}
       </Grid>
+      <AboutScroll/>
     </div>
   );
 }
