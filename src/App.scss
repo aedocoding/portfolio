@@ -300,23 +300,25 @@ body {
 
 .nav {
   position: fixed;
-  width: 100%;
   top: 0;
   left: 0;
   z-index: 3;
   width: 100%;
   background-color: transparent;
+  .header {
+    height: 140px;
+    transition: height 0.4s ease;
+  }
 
   &.navNotInvis {
-    background-color: #ffff
+    background-color: #ffff;
   }
 
   &.scroll {
     box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.1);
     background-color: #ffff;
-
-    .headerFlexContainer {
-      height: 80px;
+    .header {
+      height: 0px;
     }
   }
 }
