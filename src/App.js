@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Container from "@material-ui/core/Container";
 import Header from "./components/Header";
+import Header2 from "./components/Header2";
 import Projects from "./components/Projects";
 import Blog from "./components/Blog";
 import About from "./components/About";
@@ -23,7 +24,8 @@ function App() {
       <CssBaseline />
       <Container maxWidth="lg">
         <Router>
-          <Header title="Allen Do - Web Developer" sections={sections} />
+          {/* <Header title="Allen Do - Web Developer" sections={sections} /> */}
+          <Header2 title="Allen Do - Web Developer" sections={sections} />
           <Switch>
             <Route exact path="/" component={Projects} />
             <Route path="/blog" component={Blog} />

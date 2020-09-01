@@ -52,13 +52,13 @@ export default function Header(props) {
           variant="link"
           color="secondary"
           startIcon={<GitHubIcon />}
-          href="https://github.com/immxalan"
+          href="https://github.com/aedocoding"
         ></Button>
         <Button
           variant="link"
           color="secondary"
           startIcon={<LinkedInIcon />}
-          href="https://www.linkedin.com/in/allen-do-500945111/"
+          href="https://www.linkedin.com/in/aedocoding"
         ></Button>
       </Toolbar>
       <Toolbar
