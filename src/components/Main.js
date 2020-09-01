@@ -40,47 +40,43 @@ export default function Main(props) {
   const { post } = props;
 
   return (
-    <Paper
-      className={classes.mainFeaturedPost}
-      style={{ backgroundImage: `url(${post.image})` }}
-    >
-      {/* Increase the priority of the hero background image */}
-      {
-        <img
-          style={{ display: "none" }}
-          src={post.image}
-          alt={post.imageText}
-        />
-      }
-      <div className={classes.overlay} />
-      <Grid container>
-        <Grid item md={6}>
-          <div className={classes.mainFeaturedPostContent}>
-            <Typography
-              variant='h5'
-              color="inherit"
-              gutterBottom
-            >
-              {post.title}
-            </Typography>
-            <Typography color="inherit" paragraph>
-              {post.description}
-            </Typography>
-            <Button
-              variant="outlined"
-              color="primary"
-              style={{ backgroundColor: "#5F96E7" }}
-            >
-              <Link to={post.url} style={{ textDecoration: "none" }}>
+    <Link to={post.url} style={{ textDecoration: "none" }}>
+      <Paper
+        className={classes.mainFeaturedPost}
+        style={{ backgroundImage: `url(${post.image})` }}
+      >
+        {/* Increase the priority of the hero background image */}
+        {
+          <img
+            style={{ display: "none" }}
+            src={post.image}
+            alt={post.imageText}
+          />
+        }
+        <div className={classes.overlay} />
+        <Grid container>
+          <Grid item md={6}>
+            <div className={classes.mainFeaturedPostContent}>
+              <Typography variant="h5" color="inherit" gutterBottom>
+                {post.title}
+              </Typography>
+              <Typography color="inherit" paragraph>
+                {post.description}
+              </Typography>
+              <Button
+                variant="outlined"
+                color="primary"
+                style={{ backgroundColor: "#5F96E7" }}
+              >
                 <Typography style={{ color: "white" }} variant="subtitle1">
                   {post.linkText}
                 </Typography>
-              </Link>
-            </Button>
-          </div>
+              </Button>
+            </div>
+          </Grid>
         </Grid>
-      </Grid>
-    </Paper>
+      </Paper>
+    </Link>
   );
 }
 

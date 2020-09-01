@@ -29,34 +29,32 @@ export default function Featured(props) {
 
   return (
     <Grid item xs={12} md={6}>
-      <CardActionArea component="a" href="#">
-        <Card className={classes.card}>
-          <div className={classes.cardDetails}>
-            <CardContent>
-              <Typography color="secondary">
-                {post.title}
-              </Typography>
-              <Typography  variant="subtitle1" paragraph>
-                {post.description}
-              </Typography>
-              <Button color="secondary">
-                <Link to={post.url} style={{ textDecoration: "none" }}>
+      <Link to={post.url} style={{ textDecoration: "none" }}>
+        <CardActionArea component="a" href="#">
+          <Card className={classes.card}>
+            <div className={classes.cardDetails}>
+              <CardContent>
+                <Typography color="secondary">{post.title}</Typography>
+                <Typography variant="subtitle1" paragraph>
+                  {post.description}
+                </Typography>
+                <Button color="secondary">
                   <Typography variant="subtitle1" color="secondary">
                     Continue reading...
                   </Typography>
-                </Link>
-              </Button>
-            </CardContent>
-          </div>
-          <Hidden xsDown>
-            <CardMedia
-              className={classes.cardMedia}
-              image={post.image}
-              title={post.imageTitle}
-            />
-          </Hidden>
-        </Card>
-      </CardActionArea>
+                </Button>
+              </CardContent>
+            </div>
+            <Hidden xsDown>
+              <CardMedia
+                className={classes.cardMedia}
+                image={post.image}
+                title={post.imageTitle}
+              />
+            </Hidden>
+          </Card>
+        </CardActionArea>
+      </Link>
     </Grid>
   );
 }
