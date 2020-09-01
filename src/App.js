@@ -22,7 +22,7 @@ function App() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" style={{marginTop: 125, marginBottom: 125}}>
         <Router>
           {/* <Header title="Allen Do - Web Developer" sections={sections} /> */}
           <Header2 title="Allen Do - Web Developer" sections={sections} />

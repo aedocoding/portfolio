@@ -1,29 +1,29 @@
 /* COLOR VARIABLES */
-$primary       : #394b6a;
-$secondary     : #ff2c76;
+$primary: #394b6a;
+$secondary: #ff2c76;
 // MIXINS
 @mixin fade {
   -webkit-animation: fadein 2s;
   /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation   : fadein 2s;
+  -moz-animation: fadein 2s;
   /* Firefox < 16 */
-  -ms-animation    : fadein 2s;
+  -ms-animation: fadein 2s;
   /* Internet Explorer */
-  -o-animation     : fadein 2s;
+  -o-animation: fadein 2s;
   /* Opera < 12.1 */
-  animation        : fadein 2s;
+  animation: fadein 2s;
 }
 
 @mixin fadeFast {
   -webkit-animation: fadein 1s;
   /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation   : fadein 1s;
+  -moz-animation: fadein 1s;
   /* Firefox < 16 */
-  -ms-animation    : fadein 1s;
+  -ms-animation: fadein 1s;
   /* Internet Explorer */
-  -o-animation     : fadein 1s;
+  -o-animation: fadein 1s;
   /* Opera < 12.1 */
-  animation        : fadein 1s;
+  animation: fadein 1s;
 }
 
 // Keyframes fade animation
@@ -83,43 +83,43 @@ $secondary     : #ff2c76;
 
 .App {
   text-align: center;
-  width     : 100%;
+  width: 100%;
 }
 
 body {
-  width     : 100%;
+  width: 100%;
   overflow-x: hidden;
 }
 
-.fade{
-    @include fade
+.fade {
+  @include fade;
 }
 
 #movingBanner {
-  position  : relative;
-  width     : 100%;
-  height    : 20vh;
-  display   : flex;
-  overflow  : hidden;
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  overflow: hidden;
   background: #4286f4;
 
   div {
-    position : relative;
-    width    : 100%;
-    overflow : hidden;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
     animation: animate 40s linear infinite;
 
     .bannerText {
-      color      : white;
-      position   : absolute;
+      color: white;
+      position: absolute;
       white-space: nowrap;
-      opacity    : 0.2;
-      font-size  : 4em;
+      opacity: 0.2;
+      font-size: 4em;
       line-height: 10vh;
     }
 
     .bannerImage {
-      opacity: .2;
+      opacity: 0.2;
     }
 
     //Keyframes for scrolling banner
@@ -135,15 +135,14 @@ body {
   }
 }
 
-
 .classificationSection {
-  margin       : 0 auto;
+  margin: 0 auto;
   margin-bottom: 200px;
 }
 
 .classificationFlexContainer {
-  display        : flex;
-  flex-flow      : row;
+  display: flex;
+  flex-flow: row;
   justify-content: center;
   justify-content: space-between;
 
@@ -152,7 +151,7 @@ body {
 
     .classificationTitleSelected {
       font-size: 60px;
-      color    : #556cd6;
+      color: #556cd6;
     }
 
     .classificationTitle {
@@ -162,72 +161,72 @@ body {
 
   .classificationTextContainer {
     padding-top: 30px;
-    width      : 40%;
+    width: 40%;
   }
 }
 
 .classificationText {
-  opacity    : 0;
-  transform  : translateY(15vh);
-  visibility : hidden;
-  transition : opacity 0.6s ease-out, transform 1.0s ease-out;
+  opacity: 0;
+  transform: translateY(15vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1s ease-out;
   will-change: opacity, visibility;
 }
 
 .classificationText.is-visible {
   padding-top: 20px;
-  opacity    : 1;
-  transform  : none;
-  visibility : visible;
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
 
 //API Docs page
 .navbarCoverWhiteSpace {
   height: 160px;
-  width : 100%;
+  width: 100%;
 }
 
 .docsContainer {
-  display        : flex;
+  display: flex;
   justify-content: flex-start;
   @include fade;
 }
 
 .docsNav {
-  width          : 30%;
-  height         : 100vh;
-  display        : flex;
-  flex-direction : column;
-  align-items    : flex-start;
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: flex-start;
-  position       : fixed;
-  margin-top     : 1%;
+  position: fixed;
+  margin-top: 1%;
 
   .selectedDoc {
-    color           : #556cd6;
+    color: #556cd6;
     background-color: #f5fbff;
   }
 
   .notSelectedDoc {
-    color           : #2a2f45;
+    color: #2a2f45;
     background-color: #fff;
   }
 
   a {
     text-decoration: none;
-    padding        : 3% 5%;
-    border-radius  : 10px;
+    padding: 3% 5%;
+    border-radius: 10px;
   }
 }
 
 .textContainer {
-  width      : 70%;
-  text-align : left;
+  width: 70%;
+  text-align: left;
   margin-left: 15%;
-  margin-top : 2%;
+  margin-top: 2%;
 
   .docsOpen {
-    color      : #5469d4;
+    color: #5469d4;
     font-weight: 600;
 
     cursor: pointer;
@@ -238,63 +237,86 @@ body {
   }
 
   #intro {
-    padding-top  : 80px;
+    padding-top: 80px;
     margin-bottom: 300px;
   }
 
   #preprocessing {
-    padding-top  : 80px;
-    margin-top   : 300px;
+    padding-top: 80px;
+    margin-top: 300px;
     margin-bottom: 300px;
   }
 
   #requests {
-    padding-top  : 80px;
-    margin-top   : 300px;
+    padding-top: 80px;
+    margin-top: 300px;
     margin-bottom: 300px;
   }
 
   #model {
-    padding-top  : 80px;
-    margin-top   : 300px;
+    padding-top: 80px;
+    margin-top: 300px;
     margin-bottom: 300px;
   }
 
   #deploy {
-    padding-top  : 80px;
-    margin-top   : 300px;
+    padding-top: 80px;
+    margin-top: 300px;
     margin-bottom: 300px;
-    font-size    : 15px;
+    font-size: 15px;
   }
 
   h1 {
-    color    : #2a2f45;
+    color: #2a2f45;
     font-size: 1.5rem;
   }
 
   h2 {
-    color    : #2a2f45;
+    color: #2a2f45;
     font-size: 1.2rem;
   }
 
   p {
-    color    : #4f566b;
+    color: #4f566b;
     font-size: 1rem;
   }
 
   li {
-    color          : #4f566b;
+    color: #4f566b;
     list-style-type: circle;
   }
 
   #deployList {
-    list-style-type: decimal
+    list-style-type: decimal;
   }
 
   .docSection {
-    padding      : 4% 7%;
+    padding: 4% 7%;
     border-bottom: 1px solid #e3e8ee;
-    border-left  : 1px solid #e3e8ee;
-    width        : 100%;
+    border-left: 1px solid #e3e8ee;
+    width: 100%;
+  }
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  background-color: transparent;
+
+  &.navNotInvis {
+    background-color: #ffff
+  }
+
+  &.scroll {
+    box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.1);
+    background-color: #ffff;
+
+    .headerFlexContainer {
+      height: 80px;
+    }
   }
 }

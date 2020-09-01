@@ -29,12 +29,38 @@ const styles = (theme) => ({
 class Header2 extends Component {
   state = {
     searchNodes: "",
+    scrolled: false,
+  };
+  componentDidMount() {
+    window.addEventListener("scroll", this.navOnScroll);
+    window.scrollTo(0, 0);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.navOnScroll);
+  }
+
+  navOnScroll = () => {
+    if (window.scrollY > 20) {
+      this.setState({ scrolled: true });
+    } else {
+      this.setState({ scrolled: false });
+    }
   };
 
   render() {
     const { classes } = this.props;
+    const { scrolled } = this.state;
     return (
-      <div>
+      <div
+        className={
+          scrolled
+            ? "nav scroll"
+            : !scrolled && !this.props.backgroundTransparent
+            ? "nav navNotInvis"
+            : "nav"
+        }
+      >
         <Toolbar className={classes.toolbar}>
           <Typography
             variant="h5"
