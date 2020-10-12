@@ -1,6 +1,6 @@
 # Coding Interview University - Day 1 - Reviewing with a Udacity Prep Course
 
-#### August 24, 2020
+#### August 24, 2020 
 
 The difference between **developer** and **engineer** isn't just the title - an **engineer** has the **computer science knowledge** necessary to look at the bigger picture. Although my original plan was to find a job at a smaller-sized comapny, my future plans include one day stepping up to the big leagues in places like SF and Seattle. To even dream of one day getting there, I'm gonna have to spend countless hours practicing whiteboard problems and re-learning algorithms.
 

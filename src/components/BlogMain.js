@@ -24,13 +24,16 @@ export default function Main(props) {
       </Typography>
       <Divider />
       {posts.map((post) => (
-        <Markdown
-          post={post}
-          className={classes.markdown}
-          key={post.substring(0, 40)}
-        >
-          {post}
-        </Markdown>
+        <a name={post.month}>
+          <Markdown
+            post={post.num}
+            className={classes.markdown}
+            key={post.num.substring(0, 40)}
+          >
+            {post}
+          </Markdown>
+          <Divider/>
+        </a>
       ))}
     </Grid>
   );

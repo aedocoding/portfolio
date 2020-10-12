@@ -61,11 +61,7 @@ class Header2 extends Component {
         }
       >
         <Toolbar className={`${classes.toolbar} header`}>
-          <Button
-            variant="link"
-            color="secondary"
-            href="mailto:aedocoding@gmail.com"
-          >
+          <Button color="secondary" href="mailto:aedocoding@gmail.com">
             <svg style={{ width: 24, height: 24 }} viewBox="0 0 24 24">
               <path
                 fill="#B71C1C"
@@ -86,7 +82,6 @@ class Header2 extends Component {
           </Typography>
           <div>
             <Button
-              variant="link"
               color="secondary"
               href="https://www.facebook.com/allen.do.52"
             >
@@ -97,11 +92,7 @@ class Header2 extends Component {
                 />
               </svg>
             </Button>
-            <Button
-              variant="link"
-              color="secondary"
-              href="https://github.com/aedocoding"
-            >
+            <Button color="secondary" href="https://github.com/aedocoding">
               <svg style={{ width: 24, height: 24 }} viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
@@ -110,7 +101,6 @@ class Header2 extends Component {
               </svg>
             </Button>
             <Button
-              variant="link"
               color="secondary"
               href="https://www.linkedin.com/in/aedocoding"
             >

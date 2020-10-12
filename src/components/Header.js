@@ -43,19 +43,16 @@ export default function Header(props) {
           <Button color="secondary">{title}</Button>
         </Typography>
         <Button
-          variant="link"
           color="secondary"
           startIcon={<FacebookIcon />}
           href="https://www.facebook.com/allen.do.52"
         ></Button>
         <Button
-          variant="link"
           color="secondary"
           startIcon={<GitHubIcon />}
           href="https://github.com/aedocoding"
         ></Button>
         <Button
-          variant="link"
           color="secondary"
           startIcon={<LinkedInIcon />}
           href="https://www.linkedin.com/in/aedocoding"

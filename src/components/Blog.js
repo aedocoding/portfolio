@@ -5,6 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import Sidebar from "./Sidebar";
 import post1 from './blogposts/bp.1.md';
+import post2 from './blogposts/bp.2.md';
 import BlogMain from './BlogMain'
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
@@ -12,14 +13,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const posts = [post1 ];
+const posts = [{num: post2, month:'september'}, {num: post1, month: 'august'} ];
 
 const sidebar = {
   title: "",
   description:
     "A collection of development-related posts on topics I am either learning or find interesting.",
   archives: [
-    { title: "August 2020", url: "#" },
+    { title: "September 2020", url: "#september" },{ title: "August 2020", url: "#august" },
   ],
 
 };
