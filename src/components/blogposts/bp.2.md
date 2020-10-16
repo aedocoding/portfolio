@@ -146,14 +146,14 @@ Common error: note that the above methods do not *return* the modified list, the
   print list  ## [1, 2, 3, 4]
 ```
 
-## IIa. List Build Up
+### IIa. List Build Up
 One common pattern is to start a list a the empty list [], then use append() or extend() to add elements to it:
 ```Python
   list = []          ## Start as the empty list
   list.append('a')   ## Use append() to add elements
   list.append('b')
 ```
-## IIb. List Slices
+### IIb. List Slices
 Slices work on lists just as with strings, and can also be used to change sub-parts of the list.
 ```Python
   list = ['a', 'b', 'c', 'd']
@@ -162,7 +162,7 @@ Slices work on lists just as with strings, and can also be used to change sub-pa
   print list         ## ['z', 'c', 'd']
 ```
 
-## IIc. List Sorting
+### IIc. List Sorting
 The easiest way to sort is with the __sorted(list)__ function, which takes a list and __returns a new list with those elements in sorted order__. The original list is not changed.
 ```Python
   a = [5, 1, 4, 3]
@@ -176,7 +176,7 @@ The sorted() function can be customized through *optional* arguments. The sorted
   print sorted(strs)  ## ['BB', 'CC', 'aa', 'zz'] (case sensitive)
   print sorted(strs, reverse=True)   ## ['zz', 'aa', 'CC', 'BB']
 ```
-## IId. List Sorting - Custom Sorting with key=
+### IId. List Sorting - Custom Sorting with key=
 For more complex custom sorting, sorted() takes an optional __"key="__ specifying a _"key" function that transforms each element before comparison_. The key function __takes in 1 value__ and __returns 1 value__, and the returned "proxy" value is used for the comparisons within the sort.
 ```Python
   strs = ['ccc', 'aaaa', 'd', 'bb']
@@ -201,7 +201,7 @@ There is also an __optional argument "cmp=cmpFn" to sorted()__ _that specifies a
 The built in comparison function for strings, ints, ... is cmp(a, b), so often you want to call cmp() in your custom comparator. 
 The newer one argument key= sorting is generally preferable.
 
-## IId. sort() method - an alternative to sorted()
+### IIe. sort() method - an alternative to sorted()
 As an alternative to sorted(), the sort() method on a list sorts that list into ascending order, e.g. list.sort(). The sort() method changes the underlying list and returns None, so use it like this:
 ```Python
   alist.sort()            ## correct
@@ -211,13 +211,13 @@ As an alternative to sorted(), the sort() method on a list sorts that list into 
 - sort() _MUST be called on a list_; and __it won't work on any other enumerable collection__.
 - sort() method does not need to create a new list, so it __can be a little faster in the case that the elements to sort are already in a list__.
 
-### III. Arrays
+## III. Arrays
 An Array is a list with a few added rules:
 1. Items in an array are ordered in some way
 2. In some languages you can only have items with the same **type** while others don't have this rule
 3. Arrays are 0-index based, with the first item having an index number of 0 and so on.
 
-### IV. Tuples
+## IV. Tuples
 A __tuple__ is a _fixed size grouping of elements_, such as an (x, y) co-ordinate.
 Tuples are like lists, except they are:
 - __immutable__
@@ -258,7 +258,7 @@ print z ## hike
 
 (err_string, err_code) = Foo() ## Invoking Foo() will return a tuple of length 2
 ```
-### V. List Comprehensions
+## V. List Comprehensions
  A __list comprehension__ is a _compact way to write an expression that expands to a whole list_. 
  Suppose we have a list nums [1, 2, 3, 4], here is the list comprehension to compute a list of their squares [1, 4, 9, 16]:
  ```Python
@@ -266,7 +266,7 @@ nums = [1, 2, 3, 4]
 squares = [ n * n for n in nums] ## [1, 4, 9, 16]
  ```
 
- The syntax is __[ expr for var in list ]__ -- the for var in list looks like a regular for-loop, but without the colon (:)
+ The syntax is __expr for var in list__ -- the for var in list looks like a regular for-loop, but without the colon (:)
 
 ```Python
 strs = ['hello', 'and', 'goodbye']

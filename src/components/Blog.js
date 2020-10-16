@@ -6,6 +6,7 @@ import Container from "@material-ui/core/Container";
 import Sidebar from "./Sidebar";
 import post1 from './blogposts/bp.1.md';
 import post2 from './blogposts/bp.2.md';
+import post3 from './blogposts/bp.3.md';
 import BlogMain from './BlogMain'
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
@@ -13,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const posts = [{num: post2, month:'september'}, {num: post1, month: 'august'} ];
+const posts = [{num: post3, month:'septcont'},{num: post2, month:'september'}, {num: post1, month: 'august'} ];
 
 const sidebar = {
   title: "",
