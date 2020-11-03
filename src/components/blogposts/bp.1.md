@@ -1,6 +1,7 @@
-# Features-in-5 #1: [React v17.0] (https://reactjs.org/blog/2020/10/20/react-v17.html)
-## React v17.0 released 3 weeks ago - why should YOU care?
-![header](https://raw.github.com/aedocoding/portfolio/blob/master/src/assets/headerblogsmall.jpg
+![header](headerblogsmall.jpg)
+
+# 
+## [React v17.0] (https://reactjs.org/blog/2020/10/20/react-v17.html) released 3 weeks ago - why should YOU care?
 Well my dear reader(s), whether you are a seasoned React developer making a 6-figure salary while sipping on pour-over coffee made from only the _finest_ arabica coffee beans, or a developer-in-training who still can't understand why JavaScript is the red-headed step child of the programming world, there's plenty to care about. 
 
 But I'll keep it short and simple, an update to React means an update to the one of the tools that you're using every day, so keeping up with the newest releases is going to help you be __that 👌__ much better at your job ( or that much closer to landing your next job).
