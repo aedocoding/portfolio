@@ -5,8 +5,9 @@ import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import Sidebar from "./Sidebar";
 import post1 from './blogposts/bp.1.md';
-import post2 from './blogposts/bp.2.md';
-import post3 from './blogposts/bp.3.md';
+// import post2 from './blogposts/bp.2.md';
+// import post3 from './blogposts/bp.3.md';
+// import post4 from './blogposts/bp.4.md';
 import BlogMain from './BlogMain'
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
@@ -14,14 +15,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const posts = [{num: post3, month:'septcont'},{num: post2, month:'september'}, {num: post1, month: 'august'} ];
+const posts = [
+  // {num: post4, month:'septcont'},{num: post3, month:'septcont'},{num: post2, month:'september'}, 
+{num: post1, month: 'November'} ];
 
 const sidebar = {
   title: "",
   description:
-    "A collection of development-related posts on topics I am either learning or find interesting.",
+    "A blog about full stack related topics in 5 minutes or less.",
   archives: [
-    { title: "September 2020", url: "#september" },{ title: "August 2020", url: "#august" },
+    { title: "November 2020", url: "#november" },
   ],
 
 };
@@ -34,7 +37,7 @@ export default function Blog() {
       <CssBaseline />
       <Container className= 'fade' maxWidth="lg">
         <Grid container spacing={5} className={classes.mainGrid}>
-        <BlogMain title="Reflections from a developer in training" posts={posts} />
+        <BlogMain title="Features-in-5: Informative developer content in a jiffy" posts={posts} />
           <Sidebar
             title={sidebar.title}
             description={sidebar.description}
