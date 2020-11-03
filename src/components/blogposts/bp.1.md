@@ -7,10 +7,19 @@ Well my dear reader(s), whether you are a seasoned React developer making a 6-fi
 But I'll keep it short and simple, an update to React means an update to the one of the tools that you're using every day, so keeping up with the newest releases is going to help you be __that 👌__ much better at your job ( or that much closer to landing your next job).
 
 ## What new features do we get to play with?
+I'm glad you asked.
+
+A major version update usually means new bells and whistles added on to the developer's toolkit.
+
+For those of you unfamiliar with what v17.0 is bringing to the table - it can be summed up quite nicely.
+
 ![Nothing ](https://media0.giphy.com/media/nYogYgSmIJaIo/giphy.gif?cid=ecf05e471aff41dc34a43dbea57e200a32cbffdebcd5868b&rid=giphy.gif)
 
-- All jokes aside, what would normally be a landmark release filled with new tools for developers is instead focused on fixes and setting the stage for future releases.
-- Boring is good! It means less feature-creep and more of a focus on stability for us.
+All jokes aside, what would normally be a landmark release filled with new tools for developers is instead focused on fixes and setting the stage for future releases, in what could be considered a "boring" release.
+
+Boring is good! It means less feature-creep and more of a focus on stability for us as developers, which is never a bad thing
+
+With that out of the way, we will now focus on what I consider to be the biggest changes moving forward for React.
 
 ## 1. Gradual Upgrades - How React interacts with older versions of itself
 The standard for upgrading from an older version of React (say, 16 to 17) is to normally upgrade the whole app at once.
