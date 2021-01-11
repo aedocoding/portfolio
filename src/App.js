@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import Blog from "./components/Blog";
 import About from "./components/About";
 import COK from "./components/projects/COK.js";
+import Huddle from "./components/projects/Huddle.js";
 import BigArmor from "./components/projects/BigArmor";
 import YT from "./components/projects/YT";
 import "./App.scss";
@@ -32,6 +33,7 @@ function App() {
             <Route path="/about" component={About} />
             <Route path="/connectourkids" component={COK} />
             <Route path="/bigarmor" component={BigArmor} />
+            <Route path="/huddle" component={Huddle} />
             <Route path="/tutorials" component={YT} />
           </Switch>
         </Router>

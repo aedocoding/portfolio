@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import Main from "./Main";
 import Featured from "./Featured";
-
+const HuddleLogo = require('../assets/playstore_logo.png')
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
     marginTop: theme.spacing(3),
@@ -25,9 +25,16 @@ const main = {
 
 const featured = [
   {
+    title: "HUDDLE",
+    description: "Mobile app made to help keep meetings and study sessions productive and free from distractions like FaceBook or TikTok through a shared team “productivity timer”.",
+    image: HuddleLogo,
+    imageText: "Image Text",
+    url: "/huddle",
+  },
+  {
     title: "BIG ARMOR",
     description:
-      "The front-end I helped build to represent a data science model that analyzes language for toxicity. The model itself was never implemented but the front-end is functioning.",
+      "The front-end I helped build to represent a language model built by the data science team that analyzes for toxicity. Data Science model not implemented, but front end fully functional.",
     image: "https://www.bigarmor.com/wp-content/uploads/Big-Armor-Logo.png",
     imageText: "Image Text",
     url: "/bigarmor",
@@ -41,6 +48,7 @@ const featured = [
     imageText: "Image Text",
     url: "/tutorials",
   },
+  
 ];
 
 function App() {

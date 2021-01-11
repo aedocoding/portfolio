@@ -57,15 +57,14 @@ export default function Main(props) {
         <Grid container>
           <Grid item md={6}>
             <div className={classes.mainFeaturedPostContent}>
-              <Typography variant="h5" color="inherit" gutterBottom>
+              <Typography variant="h5"  gutterBottom>
                 {post.title}
               </Typography>
-              <Typography color="inherit" paragraph>
+              <Typography paragraph>
                 {post.description}
               </Typography>
               <Button
                 variant="outlined"
-                color="primary"
                 style={{ backgroundColor: "#5F96E7" }}
               >
                 <Typography style={{ color: "white" }} variant="subtitle1">

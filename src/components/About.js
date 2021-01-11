@@ -10,7 +10,6 @@ import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import Button from "@material-ui/core/Button";
 import Link from "@material-ui/core/Link";
-import CardContent from "@material-ui/core/CardContent";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
 import HTML from "../assets/icon-html.png";
@@ -23,6 +22,7 @@ import react from "../assets/icon-react.png";
 import reactNative from "../assets/icon-react-native.png";
 import redux from "../assets/icon-redux.png";
 import ts from "../assets/icon-ts.png";
+import firebase from "../assets/icon-firebase.png";
 import AboutScroll from "./AboutScroll"
 const useStyles = makeStyles({
   card: {
@@ -177,6 +177,14 @@ export default function About() {
             <Link href="https://www.python.org/about/">
               <CardMedia className={classes.skill} image={python} />
               <Typography>Python</Typography>
+            </Link>
+          </CardActionArea>
+        </Card>
+        <Card align="center" className={classes.skillCard}>
+          <CardActionArea>
+            <Link href="https://firebase.google.com/">
+              <CardMedia className={classes.skill} image={firebase} />
+              <Typography>Firebase</Typography>
             </Link>
           </CardActionArea>
         </Card>

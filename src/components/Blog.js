@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 
 const posts = [
   // {num: post4, month:'septcont'},{num: post3, month:'septcont'},{num: post2, month:'september'}, 
-{num: post1, month: 'November'} ];
+{num: post1, month: 'november'} ];
 
 const sidebar = {
   title: "",
