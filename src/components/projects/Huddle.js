@@ -12,6 +12,8 @@ import huddle2 from "../../assets/huddle2.png";
 import huddle3 from "../../assets/huddle3.png";
 import huddle4 from "../../assets/huddle4.png";
 import huddleLogo from "../../assets/playstore_logo.png";
+import googlePlay from "../../assets/google-play.png";
+import appstore from "../../assets/appstore.jpg";
 import reactNative from "../../assets/icon-react-native.png";
 import firebase from "../../assets/icon-firebase.png";
 import ts from "../../assets/icon-ts.png";
@@ -53,9 +55,9 @@ const useStyles = makeStyles({
     textAlign: "center",
     color: "orange",
   },
-  bullets:{
-      textAlign: 'center'
-  }
+  bullets: {
+    textAlign: "center",
+  },
 });
 
 export default function Huddle() {
@@ -72,6 +74,28 @@ export default function Huddle() {
                 <Typography className={classes.huddleText}>
                   H U D D L E
                 </Typography>
+              </Card>
+            </Grid>
+            <Typography color="secondary" className={classes.techStack}>
+              DOWNLOAD
+            </Typography>
+            <Grid justify="center" container spacing={2}>
+              <Card align="center" className={classes.skillCard}>
+                <CardActionArea>
+                  <Link href="">
+                    <CardMedia className={classes.skill} image={appstore} />
+                    <Typography>Coming soon</Typography>
+                  </Link>
+                </CardActionArea>
+              </Card>
+
+              <Card align="center" className={classes.skillCard}>
+                <CardActionArea>
+                  <Link href="">
+                    <CardMedia className={classes.skill} image={googlePlay} />
+                    <Typography>In review!</Typography>
+                  </Link>
+                </CardActionArea>
               </Card>
             </Grid>
             <Typography color="secondary" className={classes.techStack}>
@@ -108,8 +132,8 @@ export default function Huddle() {
           <Typography align="center" color="secondary">
             DESCRIPTION
           </Typography>
-          <Grid justify='center' container size={1}>
-                     <Typography >
+          <Grid justify="center" container size={1}>
+            <Typography>
               <li>
                 Set a countdown in the app that only moves when everyone is in
                 the app, away from all other distractions.
@@ -124,12 +148,11 @@ export default function Huddle() {
               </li>
               <li>Live chat lets users send messages inside a Huddle.</li>
               <li>Best of all, no sign up or account required!</li>
-      
-          </Typography>     
+            </Typography>
           </Grid>
 
           <Typography align="center" color="secondary">
-            Images
+            IMAGES
           </Typography>
           <Grid justify="center" container spacing={4}>
             <CardMedia className={classes.cardMedia} image={huddle1} />
