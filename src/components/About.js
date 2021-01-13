@@ -17,6 +17,7 @@ import CSS from "../assets/icon-css.png";
 import JS from "../assets/icon-js.png";
 import knex from "../assets/icon-knex.png";
 import node from "../assets/icon-node.png";
+import express from "../assets/express.png";
 import python from "../assets/icon-python.png";
 import react from "../assets/icon-react.png";
 import reactNative from "../assets/icon-react-native.png";
@@ -47,9 +48,15 @@ const useStyles = makeStyles({
     width: 150,
     margin: 10,
   },
+  
   skill: {
     height: 115,
     width: 115,
+  },
+  
+  skill2: {
+    height: 115,
+    width: '100%',
   },
 });
 
@@ -153,6 +160,14 @@ export default function About() {
             <Link href="https://nodejs.org/en/">
               <CardMedia className={classes.skill} image={node} />
               <Typography>Node.js</Typography>
+            </Link>
+          </CardActionArea>
+        </Card>
+        <Card align="center" className={classes.skillCard}>
+          <CardActionArea>
+            <Link href="https://expressjs.com/">
+              <CardMedia className={classes.skill2} image={express} />
+              <Typography>Express.js</Typography>
             </Link>
           </CardActionArea>
         </Card>
