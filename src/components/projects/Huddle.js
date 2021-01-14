@@ -91,9 +91,9 @@ export default function Huddle() {
 
               <Card align="center" className={classes.skillCard}>
                 <CardActionArea>
-                  <Link href="">
+                  <Link href="https://play.google.com/store/apps/details?id=com.huddleapp.us">
                     <CardMedia className={classes.skill} image={googlePlay} />
-                    <Typography>In review!</Typography>
+                    <Typography></Typography>
                   </Link>
                 </CardActionArea>
               </Card>
