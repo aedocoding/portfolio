@@ -35,7 +35,7 @@ const useStyles = makeStyles({
     height: 375,
     margin: 50,
     borderRadius: 20,
-    border: "1px solid black"
+    border: "1px solid black",
   },
   skillCard: {
     width: 150,
@@ -154,16 +154,25 @@ export default function TFAW() {
           </Typography>
           <Grid justify="center" container size={1}>
             <Typography>
-              <li>Designed database schema and engineered RESTful API.</li>
               <li>
-                Wireframed UI and created front end using React and Material UI.
+                Wireframed and created front end with React, Redux, Material UI.
               </li>
               <li>
-                Integrated Google Maps API into site + Places into web app’s search.
+                Designed database schema and engineered RESTful API back end for
+                data persistence.
               </li>
               <li>
-                Designed insights algorithm and displayed the results via
-                ApexCharts.
+                Designed insights algorithm to analyze user’s travel data and
+                displayed the results via ApexCharts in the front end.
+              </li>
+              <li>
+                Integrated Google Maps API into site + Places into web app’s
+                search.
+              </li>
+
+              <li>
+                Set up continuous integration + continuous deployment via Github
+                + Netlify.
               </li>
             </Typography>
           </Grid>
