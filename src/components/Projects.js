@@ -44,7 +44,7 @@ const featured = [
   {
     title: "BIG ARMOR",
     description:
-      "The front-end I helped build to represent a language model built by the data science team that analyzes for toxicity. Data Science model not implemented, but front end fully functional.",
+      "The front-end I helped build to represent a language model built by the data science team that analyzes for toxicity.",
     image: "https://www.bigarmor.com/wp-content/uploads/Big-Armor-Logo.png",
     imageText: "Image Text",
     url: "/bigarmor",

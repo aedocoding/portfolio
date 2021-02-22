@@ -7,6 +7,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Link from "@material-ui/core/Link";
 import Grid from "@material-ui/core/Grid";
 import CardActionArea from "@material-ui/core/CardActionArea";
+import github from "../../assets/github.png";
 import HTML from "../../assets/icon-html.png";
 import CSS from "../../assets/icon-css.png";
 import JS from "../../assets/icon-js.png";
@@ -65,7 +66,7 @@ export default function YT() {
       <Card className={classes.card}>
         <div className={classes.cardDetails}>
           <CardContent>
-            <Grid justify="center" container spacing={1}>
+            <Grid justify="center" container spacing={2}>
               <Card align="center" className={classes.skillCard}>
                 <CardActionArea>
                   <Link href="https://www.youtube.com/playlist?list=PLwgPVaBXw16MF5xzwKNNwgPYqdhsaqvmP">
@@ -76,6 +77,14 @@ export default function YT() {
                       }
                     />
                     <Typography>Youtube Playlist</Typography>
+                  </Link>
+                </CardActionArea>
+              </Card>
+              <Card align="center" className={classes.skillCard}>
+                <CardActionArea>
+                  <Link href=" https://github.com/WebPT17-Sprint-Practice">
+                    <CardMedia className={classes.skill} image={github} />
+                    <Typography>Github Practice Repos for Videos</Typography>
                   </Link>
                 </CardActionArea>
               </Card>
