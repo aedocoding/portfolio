@@ -18,6 +18,7 @@ import JS from "../assets/icon-js.png";
 import knex from "../assets/icon-knex.png";
 import node from "../assets/icon-node.png";
 import express from "../assets/express.png";
+import postgresql from "../assets/icon-postgresql.png";
 import python from "../assets/icon-python.png";
 import react from "../assets/icon-react.png";
 import reactNative from "../assets/icon-react-native.png";
@@ -176,6 +177,14 @@ export default function About() {
             <Link href="http://knexjs.org/">
               <CardMedia className={classes.skill} image={knex} />
               <Typography>Knex.js</Typography>
+            </Link>
+          </CardActionArea>
+        </Card>
+        <Card align="center" className={classes.skillCard}>
+          <CardActionArea>
+            <Link href="https://www.postgresql.org/">
+              <CardMedia className={classes.skill} image={postgresql} />
+              <Typography>PostgreSQL</Typography>
             </Link>
           </CardActionArea>
         </Card>

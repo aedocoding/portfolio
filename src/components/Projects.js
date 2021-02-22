@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import Main from "./Main";
 import Featured from "./Featured";
-const HuddleLogo = require('../assets/playstore_logo.png')
+const HuddleLogo = require("../assets/playstore_logo.png");
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
     marginTop: theme.spacing(3),
@@ -25,8 +25,18 @@ const main = {
 
 const featured = [
   {
+    title: "TRAVEL FAR AND WIDE",
+    description:
+      "Full stack web app that allows users to save places they’ve traveled to or want to travel to, while having insights/recommendations delivered.",
+    image:
+      "https://i.imgur.com/IyIHsYg.png",
+    imageText: "Image Text",
+    url: "/travel",
+  },
+  {
     title: "HUDDLE",
-    description: "Mobile app made to help keep meetings and study sessions productive and free from distractions like FaceBook or TikTok through a shared team “productivity timer”.",
+    description:
+      "Mobile app made to help keep meetings and study sessions productive and free from distractions like TikTok through a shared team “productivity timer”.",
     image: HuddleLogo,
     imageText: "Image Text",
     url: "/huddle",
@@ -48,7 +58,6 @@ const featured = [
     imageText: "Image Text",
     url: "/tutorials",
   },
-  
 ];
 
 function App() {
@@ -56,7 +65,7 @@ function App() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container className='fade' maxWidth="lg">
+      <Container className="fade" maxWidth="lg">
         <Main post={main} />
         <Grid container spacing={4}>
           {featured.map((post) => (

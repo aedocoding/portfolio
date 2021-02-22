@@ -11,6 +11,7 @@ import COK from "./components/projects/COK.js";
 import Huddle from "./components/projects/Huddle.js";
 import BigArmor from "./components/projects/BigArmor";
 import YT from "./components/projects/YT";
+import TFAW from "./components/projects/TFAW";
 import "./App.scss";
 
 const sections = [
@@ -35,6 +36,7 @@ function App() {
             <Route path="/bigarmor" component={BigArmor} />
             <Route path="/huddle" component={Huddle} />
             <Route path="/tutorials" component={YT} />
+            <Route path="/travel" component={TFAW}/>
           </Switch>
         </Router>
       </Container>
