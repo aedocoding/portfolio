@@ -75,7 +75,7 @@ export default function TFAW() {
               </Card>
             </Grid>
             <Typography color="secondary" className={classes.techStack}>
-              DOWNLOAD
+              GITHUB
             </Typography>
             <Grid justify="center" container spacing={2}>
               <Card align="center" className={classes.skillCard}>
@@ -109,7 +109,7 @@ export default function TFAW() {
               </Card>
               <Card align="center" className={classes.skillCard}>
                 <CardActionArea>
-                  <Link href="https://firebase.google.com/">
+                  <Link href="https://redux.js.org/">
                     <CardMedia className={classes.skill} image={redux} />
                     <Typography>Redux</Typography>
                   </Link>
@@ -159,7 +159,7 @@ export default function TFAW() {
                 Wireframed UI and created front end using React and Material UI.
               </li>
               <li>
-                Integrated Google Maps API + Places into web app’s search.
+                Integrated Google Maps API into site + Places into web app’s search.
               </li>
               <li>
                 Designed insights algorithm and displayed the results via

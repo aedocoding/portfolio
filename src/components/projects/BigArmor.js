@@ -5,6 +5,16 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Link from "@material-ui/core/Link";
+import Grid from "@material-ui/core/Grid";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import react from "../../assets/icon-react.png";
+import sass from "../../assets/icon-sass.png";
+import knex from "../../assets/icon-knex.png";
+import node from "../../assets/icon-node.png";
+import express from "../../assets/express.png";
+import postgresql from "../../assets/icon-postgresql.png";
+import aws from "../../assets/aws-logo.png";
+import github from "../../assets/github.png";
 import big1 from "../../assets/big1.png";
 import big2 from "../../assets/big2.png";
 import big3 from "../../assets/big3.png";
@@ -16,86 +26,104 @@ const useStyles = makeStyles({
   cardDetails: {
     flex: 1,
   },
+  skill2: {
+    height: 115,
+    width: "100%",
+  },
   cardMedia: {
-    width: 550,
-    height: 350,
-    borderRadius: 5,
-    margin: 20
+    width: 800,
+    height: 375,
+    margin: 50,
+    borderRadius: 20,
+    border: "1px solid black",
+  },
+  skillCard: {
+    width: 150,
+    margin: 10,
+  },
+  skill: {
+    height: 115,
+    width: 115,
+  },
+  techStack: {
+    marginTop: 20,
+    marginBottom: 10,
+    textAlign: "center",
+  },
+  appText: {
+    marginBottom: 10,
+    textAlign: "center",
   },
 });
-
 export default function BigArmor() {
   const classes = useStyles();
 
   return (
-    <div className='fade'>
+    <div className="fade">
       <Card className={classes.card}>
         <div className={classes.cardDetails}>
           <CardContent>
-            <Typography color='secondary'>TECH STACK</Typography>
-            <Typography>
-                <li>React</li>
-                <li>React Router</li>
-                <li>TypeScript</li>
-                <li>SASS</li>
-                <li>amCharts</li>
+            <Grid justify="center" container spacing={1}>
+              <Card align="center" className={classes.skillCard}>
+                <CardActionArea>
+                  <Link href="https://master.d1lbzqg7vuxz8b.amplifyapp.com/">
+                    <CardMedia className={classes.skill} image={aws} />
+                    <Typography>Deployed Site</Typography>
+                  </Link>
+                </CardActionArea>
+              </Card>
+            </Grid>
+            <Typography color="secondary" className={classes.techStack}>
+              TECH STACK
             </Typography>
-            <Typography>
-              <Link
-                color="secondary"
-                href="https://master.d1lbzqg7vuxz8b.amplifyapp.com/"
-              >
-                Link to deployed website
-              </Link>
-            </Typography>
+            <Grid justify="center" container spacing={3}>
+              <Card align="center" className={classes.skillCard}>
+                <CardActionArea>
+                  <Link href="https://reactjs.org/docs/getting-started.html">
+                    <CardMedia className={classes.skill} image={react} />
+                    <Typography>React</Typography>
+                  </Link>
+                </CardActionArea>
+              </Card>
+              <Card align="center" className={classes.skillCard}>
+                <CardActionArea>
+                  <Link href="https://sass-lang.com/">
+                    <CardMedia className={classes.skill} image={sass} />
+                    <Typography>SASS</Typography>
+                  </Link>
+                </CardActionArea>
+              </Card>
+              <Card align="center" className={classes.skillCard}>
+                <CardActionArea>
+                  <Link href="https://nodejs.org/en/">
+                    <CardMedia className={classes.skill} image={node} />
+                    <Typography>Node.js</Typography>
+                  </Link>
+                </CardActionArea>
+              </Card>
+            </Grid>
           </CardContent>
+          <Typography align="center" color="secondary">
+            FEATURES BUILT
+          </Typography>
+          <Grid justify="center" container size={1}>
+            <Typography>
+              <li>Wireframed design and and architected website.</li>
+              <li>Built and styled components in React with SAASS for Data Science team's needs.</li>
+              <li>Added several CSS animations throughout the website.</li>
+            </Typography>
+          </Grid>
+          <Typography align="center" color="secondary">
+            IMAGES
+          </Typography>
+          <Grid justify="center" container spacing={4}>
+            <CardMedia className={classes.cardMedia} image={big1} />
+            <CardMedia className={classes.cardMedia} image={big2} />
+            <CardMedia className={classes.cardMedia} image={big3} />
+            {/* <CardMedia className={classes.cardMedia} image={TFAW4} /> */}
+          </Grid>
         </div>
-        <CardMedia className={classes.cardMedia} image={big2} />
       </Card>
-      <div>
-        <Typography color="secondary">DESCRIPTION</Typography>
-        <Typography>
-          <li>
-            This project was assigned to our team in parallel with the other
-            project displayed on my portfolio (Connect Our Kids). We were
-            assigned to work with a data science team that was in the process of
-            creating a language model that would analyze text for toxicity as
-            well as various other parameters. While the data science team built
-            the API, we would build the front end as well as the form necessary
-            to demo the API and have the model return us the parameters in the
-            form of JSON. The end goal was to take that JSON object and
-            represent it using a radar chart.
-          </li>
-          <li>
-            Ultimately, the data science team fell short of fully implementing
-            their model. Hosting it on Google Cloud caused a bevy of issues so
-            we were never able to demo the API on the front-end we built for it.
-            The website still exists and even includes a section dedicated to
-            demoing the now defunct API. The total time spent on the front end
-            for this project was around a week.
-          </li>
-        </Typography>
-        <Typography color="secondary">FEATURES BUILT </Typography>
-        <Typography>
-
-            <li>
-              Led the team on overall design and color scheme for the website.
-            </li>
-            <li>Created the "Google Cloud" banner on the home page.</li>
-            <li>
-              Added the scrolling animation effect for the 6 parameters
-              described on the "Try It" page.
-            </li>
-            <li>
-              Added the scrolling effect on the "Documentation" page as well as
-              the jump-to-section effect.
-            </li>
-            <li>
-              Added several CSS animations (like the fade-in) throughout the
-              wensite.
-            </li>
-        </Typography>
-      </div>
     </div>
   );
 }

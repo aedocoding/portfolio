@@ -6,6 +6,7 @@ import Container from "@material-ui/core/Container";
 import Main from "./Main";
 import Featured from "./Featured";
 const HuddleLogo = require("../assets/playstore_logo.png");
+const TFAW = require("../assets/tfaw-home.png");
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
     marginTop: theme.spacing(3),
@@ -28,8 +29,7 @@ const featured = [
     title: "TRAVEL FAR AND WIDE",
     description:
       "Full stack web app that allows users to save places they’ve traveled to or want to travel to, while having insights/recommendations delivered.",
-    image:
-      "https://i.imgur.com/IyIHsYg.png",
+    image: TFAW,
     imageText: "Image Text",
     url: "/travel",
   },
@@ -52,7 +52,7 @@ const featured = [
   {
     title: "REACT CODING TUTORIALS",
     description:
-      "A collection of recordings I've made for students that covers important web-development concepts - with a focus on fullstack, React, and related frameworks or libraries.",
+      "A collection of recordings I've made for students that covers important full stack web-development concepts - with a focus on React and Node.js",
     image:
       "https://yt3.ggpht.com/a/AATXAJxHHP_h8bUovc1qC4c07sVXxVbp3gwDEg-iq8gbFQ=s900-c-k-c0xffffffff-no-rj-mo",
     imageText: "Image Text",
