@@ -7,6 +7,7 @@ import Main from "./Main";
 import Featured from "./Featured";
 const HuddleLogo = require("../assets/playstore_logo.png");
 const TFAW = require("../assets/tfaw-home.png");
+const github = require("../assets/github.png");
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
     marginTop: theme.spacing(3),
@@ -57,6 +58,14 @@ const featured = [
       "https://yt3.ggpht.com/a/AATXAJxHHP_h8bUovc1qC4c07sVXxVbp3gwDEg-iq8gbFQ=s900-c-k-c0xffffffff-no-rj-mo",
     imageText: "Image Text",
     url: "/tutorials",
+  },
+  {
+    title: "NODE BACKEND TEMPLATE",
+    description:
+      "This project was made in order to allow developers to quickly boilerplate a back end for whatever project they might be working on, it has only the essentials in getting a working API up and running.",
+    image: github,
+    imageText: "Image Text",
+    url: "/template",
   },
 ];
 

@@ -12,6 +12,7 @@ import Huddle from "./components/projects/Huddle.js";
 import BigArmor from "./components/projects/BigArmor";
 import YT from "./components/projects/YT";
 import TFAW from "./components/projects/TFAW";
+import NodeTemplate from "./components/projects/NodeTemplate";
 import "./App.scss";
 
 const sections = [
@@ -37,6 +38,7 @@ function App() {
             <Route path="/huddle" component={Huddle} />
             <Route path="/tutorials" component={YT} />
             <Route path="/travel" component={TFAW}/>
+            <Route path="/template" component={NodeTemplate}/>
           </Switch>
         </Router>
       </Container>
